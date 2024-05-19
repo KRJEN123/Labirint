@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    
+
+}
+body{
+    background: url(img/background.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Courier New';
+}
+.bo{
+    width: 100%;
+    height: 100%;
+}
+
+/*LOGO*/
+.logo{
+    height: 100px;
+    width: 750px;
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
+}
+.logo a{
+    color:  #cef5b3;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+
+    
+}
+/*HOLDER FOR MAZE*/
+.holder{
+    margin: auto;
+    width: 750px;
+    height: 750px;
+}
+.ho{
+    position: relative;
+    margin:auto auto 0 auto;
+    width: fit-content;
+}
+/*MAZE*/
+.maze{
+    height: fit-content;
+    width: 100%;
+    display: block;
+    margin:0 auto 0 auto;
+}
+#canvas{
+    display: block;
+    background: rgba(0, 0, 0, 0.79);
+}
+#canvas2 {
+    position: absolute;
+    top: 0;
+}
+#canvas3{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+}
+
+.svg{
+    padding-left: 135px;
+    padding-top: 37px;
+}
+#ch {
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+/*CONSEL-BUTTONS*/
+
+.console{
+    height: 15%;
+    width: 100%;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.play, .solve, .rules, .reset{
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 29px;
+   
+    color: #fff;
+    background-color: #2C3E50; /* Dark Grayish Blue */
+    padding: 12px 24px;
+    border: 2px solid #95A5A6; /* Light Gray */
+    border-radius: 25px; /* Rounder */
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+  
+button:hover {
+    background-color: #34495E; /* Slightly lighter dark grayish blue */
+    color: #fff;
+    border-color: #7F8C8D; /* Darker light gray */
+}
+button:disabled{
+    background: rgba(6, 28, 48, 0.9);
+    color: #7F8C8D;
+}
+
+@font-face {
+    font-family: 'Courier New', Courier, monospace;
+    src: url(Enchant-Font/Enchant.ttf);
+}
+
+
+.sweet{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    width: 550px;
+    font-weight:bolder ;
+    height: 660px;
+    background: url('img/rules1.png') no-repeat center;
+    background-size: cover;
+    color:rgb(212, 58, 58);
+}
+.tit{
+    margin-top: 15px;
+}
+.butt{
+    position: absolute;
+    bottom: 62px;
+    margin-left: 22px;
+    padding-left: 16px;
+    background-color: transparent !important;
+    border-radius: 70px !important;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px; /* Adjust the width and height as needed */
+}
+
+
+.end{
+    font-size: 25px;
+    top: 30px;
+}
+.butt2{
+    position: absolute;
+    bottom: 62px;
+    margin-left: 26px;
+    padding-left: 13px;
+    background-color: transparent !important;
+    border-radius: 70px !important;
+    width: 50px; /* Adjust the width and height as needed */
+    height: 50px; /* Adjust the width and height as needed */
+}
+div:where(.swal2-container) h2:where(.swal2-title) {
+    padding-top:0.6em !important;
+}

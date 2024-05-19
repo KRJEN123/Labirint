@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/fav.ico">
+    </head>
+    <body>
+        <div class="bo">
+            
+            <div class="logo">
+                <a>TEMPLE RUN</a>
+            </div>
+            <div class="holder">
+                <div class="maze">
+                    <div class="ho">
+                        
+                        <canvas id="canvas" width="484px" height="484px">
+                        </canvas>
+                        <canvas id="canvas2" width="484px" height="484px">
+                        </canvas>
+                        <canvas id="canvas3" width="484px" height="484px">
+                        </canvas>
+
+                    </div>
+                </div>
+                <div class="console">
+                    <div class="buttons text">
+                        <button type="button" class="solve gate-button" id="sol" onclick="drawSolution();" >SOLVE</button>
+                        <button class="play" id="play" onclick="moveCh(); gemend=false; moveKn(true);">PLAY</button>
+                        <button class="reset" onclick="window.location.reload();">RESET</button>
+                        <button class="rules" onclick="sweet();">RULES</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js">
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
